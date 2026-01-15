@@ -7,7 +7,7 @@
 function heure(h){
     if(h<12){
         return "matin";
-    }else if((h<=18)&&(h>=12)){
+    }else if(h<=18){
         return "aprés-midi";
     }else if(h>18){
         return"soir"
