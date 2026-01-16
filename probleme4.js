@@ -36,12 +36,13 @@ function vitesse(v){
     }else if((v>=30)&&(v<=90)){
         return "normal"
 
-    }else if(v>90){
+    }else{
         return "rapide"
 
-    }return "vitesse incorrect"
+    }
 }
-
+vitesse(20);
+vitesse(200);
 
 
 
@@ -49,10 +50,10 @@ function vitesse(v){
 // s’il est divisible par 2 OU par 3
 // MAIS PAS par les deux en même temps
 function divisible(number){
-    if((number%2===0)||(number%3===0)){
+    if(number%2===0||number%3===0){
         return true
 
-    }else if ((number%2!==0)||(number%3!==0)){
+    }else if (number%2===0 && number%3===0){
         return true
     }return false
 }
