@@ -4,7 +4,7 @@
 
 function nombres(){
     var n=0;
-    while(n<=10 && n>=0){
+    while(n<=10){
         console.log(n);
         n++;
 
@@ -24,7 +24,7 @@ function nombres(n){
 
     }
 }
-nombres();
+nombres(4);
 
 
 
@@ -37,4 +37,4 @@ function nombres(n){
 
     }
 }
-nombres();
+nombres(4);
