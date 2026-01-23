@@ -3,7 +3,7 @@
 function puissanceQuiAffiche(base,puissance){
     var s=0;
     for(var i=1;i<=puissance;i++){
-        s=s+base*base;
+        console.log(base*base);
     }return s;
 }
 puissanceQuiAffiche(4,2);
@@ -12,9 +12,9 @@ puissanceQuiAffiche(4,2);
 // 2- Écris une fonction afficheDiviseurs qui prend un nombre n et affiche tous ses diviseurs.
 function afficheDiviseurs(n){
     for(var i=1;i<=n;i++){
-        if(n%i===0)
+        if(n%i===0){
         console.log(i);
-    }
+    }}
 }
 afficheDiviseurs(12);
 
@@ -31,11 +31,11 @@ afficheNombresImpaire(12);
 
 // 4- Écris une fonction afficheMotInverse qui prend une chaîne de caractères et affiche les lettres dans l’ordre inverse.
 function afficheMotInverse(chaine){
-
+var s="";
     for(var i=chaine.length-1;i>=0;i--){
         
-        console.log(chaine[i]);
-    }
+        s=s+chaine[i];
+    }return s;
 }
 afficheMotInverse("rayen");
 
