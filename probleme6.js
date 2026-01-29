@@ -30,7 +30,7 @@ afficheMultiplesDe3(6);
 // 3- Écris une fonction compteVoyelles qui prend une chaîne de caractères et compte le nombre de voyelles avec une boucle while.
 
 function compteVoyelles(ch){
-    var s="";
+    var s=0;
     var compteur=0;
     while(compteur<ch.length){
         if(ch.charAt(compteur)==="a" || ch.charAt(compteur)==="e" || ch.charAt(compteur)==="y" || ch.charAt(compteur)==="i" || ch.charAt(compteur)==="o" || ch.charAt(compteur)==="u"){
