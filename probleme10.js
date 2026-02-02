@@ -35,7 +35,7 @@ removeElement([10,20,30],10);
 }
     i--
 
-    }
+    }return s;
 }
 reverseStr("hello");
 
@@ -44,6 +44,16 @@ reverseStr("hello");
  //  et retourne un tableau contenant les clés de l’objet.
  // objKey({name:'ahmed', age:20}) ==> ['name','age']
 
+function objKey(objet){
+    var tab=[];
+   
+    
+    tab=Object.keys(objet)
+    return tab ;
+}
+objKey({name:'rayen', age:22});
+
+
 
 
 // 4- Prends un tableau et supprime chaque deuxième élément de ce tableau.
@@ -51,3 +61,12 @@ reverseStr("hello");
 // Exemple :
 // myArr = ['Keep', 'Remove', 'Keep', 'Remove', 'Keep'];
 // removeEveryOther(myArr) ==> ['Keep', 'Keep', 'Keep']
+
+
+function tableau(tab){
+    for(var i=1;i<tab.length;i+=2){
+        tab.splice(i,1);
+    }return tab;
+
+}
+tableau(['Keep', 'Remove', 'Keep', 'Remove', 'Keep']);
