@@ -2,7 +2,7 @@
  // en paramètres et retourne un nouveau tableau avec la première occurrence
  // de cette valeur supprimée. Si la valeur n’est pas trouvée, retourne le tableau original.
 function removeElement(tab,valeur){
-    var tab1=tab;
+    var tab1=tab.slice();
     
     for(var i=0;i<tab.length;i++){
         if(tab[i]===valeur){
@@ -30,10 +30,10 @@ removeElement([10,20,30],10);
     var j=0;
     while(i>=0){
         if(j<chaine.length-1){
-    s=s+chaine[i]+i
-     j++
+    s=s+chaine[i]+j;
 }
-    i--
+i--
+j++
 
     }return s;
 }
@@ -64,7 +64,7 @@ objKey({name:'rayen', age:22});
 
 
 function tableau(tab){
-    for(var i=1;i<tab.length;i+=2){
+    for(var i=1;i<tab.length;i++){
         tab.splice(i,1);
     }return tab;
 
