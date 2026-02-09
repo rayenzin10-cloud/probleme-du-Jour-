@@ -93,7 +93,9 @@ moyenne([10, 12, 8, 14])
 
 function agesEnMinutes(personnes) {
   return map(personnes, function (n) {
-    return n.age * 365 * 24 * 60;
+
+    n.age = n.age * 365 * 24 * 60;
+    return n
   });
 }
 var personnes = [{
