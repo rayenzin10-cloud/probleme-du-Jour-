@@ -1,4 +1,20 @@
 
+
+function each(tab, func) {
+  for (var i = 0; i < tab.length; i++) {
+    func(tab[i], i);
+  }
+}
+
+function map(array, func) {
+  var result = [];
+  each(array, function (el, i) {
+    result.push(func(el, i));
+  });
+  return result;
+}
+
+
 // 1 - Écrire une fonction qui prend un tableau de nombres et retourne un tableau où chaque nombre est augmenté de 10 % en utilisant map.
 
 
@@ -45,6 +61,6 @@
 //        },
 //        age: 33
 //  }];
-// *
+// 
 
 
