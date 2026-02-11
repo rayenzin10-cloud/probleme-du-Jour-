@@ -36,7 +36,7 @@ function map(array, func) {
 
 function uppercaseAll(arrayOfStrings) {
   return map(arrayOfStrings, function (n) {
-    return n[0].toUpperCase() + n.slice(1);
+    return n.toUpperCase();
   });
 }
 var strArr = ['hello', 'world', 'whirled', 'peas'];
