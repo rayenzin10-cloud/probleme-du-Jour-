@@ -38,7 +38,7 @@ function nombreimpaire(tab){
     var t= new Array();
     var i=0;
 
-    while(i<tab.length){
+    while(i<tab.length-1){
         if(tab[i]%2!==0){
             t.push(tab[i]);
 
@@ -66,7 +66,7 @@ elementpositif([-1,-2,0,1,3])
 
 function tabpair(tab){
     var t=new Array();
-    for(var i=0;i<=tab.length;i++){
+    for(var i=0;i<=tab.length-1;i++){
         if(i%2===0){
             t.push(tab[i]);
         }
