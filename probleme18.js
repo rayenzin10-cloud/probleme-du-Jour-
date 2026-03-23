@@ -8,8 +8,12 @@
  */
 var evenOccurrence = function (arr) {
   for (var i = 0; i <= arr.length; i++) {
-    occurence = arr[0]
+    var occurence = arr[0];
+    var x = arr.find((arr[i]) => arr[i] === occurence);
+     
+
   }
+  
 
 
 };
