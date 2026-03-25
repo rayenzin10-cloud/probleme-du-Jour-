@@ -18,8 +18,8 @@ var commonCharacters = function (string1, string2) {
   ch1 = string1.replace(" ", "");
   ch2 = string2.replace(" ", "");
   for (i of ch1) {
-    if (ch2.includes(ch1[i]))
-      chaine3 += ch[i];
+    if (ch2.includes(i))
+      chaine3 += i;
 
   }
   return chaine3;
